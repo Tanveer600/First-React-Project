@@ -13,7 +13,8 @@ import {
 Modal.setAppElement('#root');
 
 export default function Transaction() {
-  const [ setTransactions] = useState([]);
+const [transactions, setTransactions] = useState([]);
+
   const [accounts, setAccounts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [modalIsOpen, setModalIsOpen] = useState(false);
